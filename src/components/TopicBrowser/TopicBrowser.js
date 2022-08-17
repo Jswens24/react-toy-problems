@@ -1,14 +1,21 @@
-import React from 'react';
-import Component from 'react';
+import React, { Component } from 'react';
+import EvenAndOdd from '../Topics/EvenAndOdd';
+import FilterObject from '../Topics/FilterObject';
+import FilterString from '../Topics/FilterString';
 
 
-const TopicBrowser = () => {
+class TopicBrowser extends Component {
 
-    return (
-        <div>
-            <p>Hello World</p>
-        </div>
-    )
+    render() {
+        return (
+            <div>
+                <p>Hello World.</p>
+                <EvenAndOdd />
+                <FilterObject />
+                <FilterString />
+            </div>
+        )
+    }
 }
 
 
